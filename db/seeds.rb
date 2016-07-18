@@ -12,19 +12,19 @@
 end
 
 5.times do |n|
-  name = Faker::Lorem.words(5)
+  name = Faker::Lorem.words(1)
   language = "English"
   Course.create!(name: name,
                language: language)
 end
 
 100.times do |n|
-  word = Faker::Lorem.words(2..10)
-  meaning = Faker::Lorem.words(2..10)
+  word = Faker::Lorem.words(1)
+  meaning = Faker::Lorem.words(1)
   sound = "https://www.freesound.org/people/ljudman/sounds/33245/"
   course_id = rand(1..5)
-  Word.create!(word: word,
-               meaning: meaning,
+  Word.create!(word: word[0],
+               meaning: meaning[0],
                sound: sound,
                course_id: course_id)
 end
