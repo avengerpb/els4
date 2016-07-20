@@ -22,6 +22,7 @@
 en:
   about: "About"
   all_user: "All Users"
+  category: "Category"
   contact: "Contact"
   contentAbout: "This is the about page."
   contentContact: "This is the contact page."
@@ -30,6 +31,7 @@ en:
   confirm: "Confirmation"
   create_account: "Create My Account"
   error: "error"
+  greeting: "Greeting "
   help: "Help"
   home: "Home"
   invalid: "Invalid email/password combination"
