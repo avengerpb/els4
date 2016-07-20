@@ -29,6 +29,14 @@ en:
   contentHelp: "This is the help page."
   contentHome: "This is our home page."
   confirm: "Confirmation"
+  course:
+    number: "Course number"
+    name: "Course name"
+    list: "Course List"
+    content: "This is the list of course that you have."
+    more: "To get more course please contact to us."
+    learn: "Click to learn"
+    choose: "Choose Lesson"
   create_account: "Create My Account"
   error: "error"
   greeting: "Greeting "
@@ -39,6 +47,8 @@ en:
   login: "Log in"
   logout: "Log out"
   logo: "E-Learning"
+  lesson:
+    danger: "Please log in"
   meaning: "Meaning"
   more_word: "For more word please contact to us."
   wnumber: "Word Number"

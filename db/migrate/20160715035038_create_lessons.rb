@@ -1,7 +1,7 @@
 class CreateLessons < ActiveRecord::Migration
   def change
     create_table :lessons do |t|
-      t.integer :status
+      t.integer :status, default: 0
       t.references :user, foreign_key: true
       t.references :course, foreign_key: true
 

@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="center jumbotron">
+    <h1><%= t("course.list") %></h1>
+    <h3><%= t("course.content") %></h3>
+    <h4><%= t("course.more") %></h4>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th><%= t("course.number") %></th>
+        <th><%= t("course.name") %></th>
+        <th><%= t("language") %></th>
+        <th><%= t("course.choose") %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @courses.each do |crs| %>
+        <tr>
+          <td><%= crs.id %></td>
+          <td><%= crs.name %></td>
+          <td><%= crs.language %></td>
+          <td><%= link_to t("course.learn"), course_lessons_path(crs), method: :post,
+           class: "btn btn-primary" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
