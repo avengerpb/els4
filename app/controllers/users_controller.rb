@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
-  
+
+  def index
+    @users = User.paginate(page: params[:page], per_page: Settings.user_per_page)
+  end
+
   def show
     @user = User.find_by id: params[:id]
   end
