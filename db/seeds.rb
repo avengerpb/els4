@@ -14,7 +14,7 @@ end
 5.times do |n|
   name = Faker::Lorem.words(1)
   language = "English"
-  Course.create!(name: name,
+  Course.create!(name: name[0],
                language: language)
 end
 
